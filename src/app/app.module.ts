@@ -8,6 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UserregComponent } from './userreg/userreg.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { BookAddComponent } from './book-add/book-add.component';
+import { BookSearchComponent } from './book-search/book-search.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
+import { ViewBooksComponent } from './view-books/view-books.component';
 
 const myroute:Routes=[
   {
@@ -20,6 +24,20 @@ const myroute:Routes=[
   {
     path:'log',
     component:UserLoginComponent
+  },{
+    path:'add',
+    component:BookAddComponent
+  },{
+    path:'search',
+    component:BookSearchComponent
+  },
+  {
+    path:'del',
+    component:BookDeleteComponent
+  },
+  {
+    path:'view',
+    component:ViewBooksComponent
   }
 
 ]
@@ -31,7 +49,11 @@ const myroute:Routes=[
     AppComponent,
     AdminComponent,
     UserregComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    BookAddComponent,
+    BookSearchComponent,
+    BookDeleteComponent,
+    ViewBooksComponent
   ],
   imports: [
     BrowserModule,
