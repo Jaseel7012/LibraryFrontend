@@ -12,6 +12,7 @@ import { BookAddComponent } from './book-add/book-add.component';
 import { BookSearchComponent } from './book-search/book-search.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
+import { IssueComponent } from './issue/issue.component';
 
 const myroute:Routes=[
   {
@@ -38,6 +39,9 @@ const myroute:Routes=[
   {
     path:'view',
     component:ViewBooksComponent
+  },{
+    path:'issue',
+    component:IssueComponent
   }
 
 ]
@@ -53,7 +57,8 @@ const myroute:Routes=[
     BookAddComponent,
     BookSearchComponent,
     BookDeleteComponent,
-    ViewBooksComponent
+    ViewBooksComponent,
+    IssueComponent
   ],
   imports: [
     BrowserModule,
