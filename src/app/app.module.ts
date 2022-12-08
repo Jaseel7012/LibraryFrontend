@@ -13,6 +13,8 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
 import { IssueComponent } from './issue/issue.component';
+import { NavbarUserComponent } from './navbar-user/navbar-user.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myroute:Routes=[
   {
@@ -33,7 +35,7 @@ const myroute:Routes=[
     component:BookSearchComponent
   },
   {
-    path:'del',
+    path:'delete',
     component:BookDeleteComponent
   },
   {
@@ -58,7 +60,9 @@ const myroute:Routes=[
     BookSearchComponent,
     BookDeleteComponent,
     ViewBooksComponent,
-    IssueComponent
+    IssueComponent,
+    NavbarUserComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
